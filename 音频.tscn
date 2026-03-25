@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://drp4eiqhk40hc"]
+
+[ext_resource type="AudioStream" uid="uid://cx1r8ejv2ggyn" path="res://BGM Pack 1 MP3/beanfeast.mp3" id="1_qut8i"]
+[ext_resource type="Script" uid="uid://dy3qm3hxxjyps" path="res://EasyScriptsLearning/Node2dTest.cs" id="1_v76b3"]
+[ext_resource type="AudioStream" uid="uid://cjrqwc2gm8kvj" path="res://BGM Pack 1 MP3/dramatic_boi.mp3" id="2_j55fx"]
+[ext_resource type="Script" uid="uid://dk5xqjol07vbe" path="res://EasyScriptsLearning/AudioStreamPlayerTest.cs" id="2_wmh2q"]
+
+[node name="Node2D" type="Node2D" unique_id=1705800825]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=617721719]
+script = ExtResource("1_v76b3")
+bgm = ExtResource("2_j55fx")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=456044517]
+stream = ExtResource("1_qut8i")
+volume_db = -26.139
+script = ExtResource("2_wmh2q")

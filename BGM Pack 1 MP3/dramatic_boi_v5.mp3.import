@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cnpplbds147af"
+path="res://.godot/imported/dramatic_boi_v5.mp3-b3abe31d4ea0502f18f3e1d6576ffc04.mp3str"
+
+[deps]
+
+source_file="res://BGM Pack 1 MP3/dramatic_boi_v5.mp3"
+dest_files=["res://.godot/imported/dramatic_boi_v5.mp3-b3abe31d4ea0502f18f3e1d6576ffc04.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

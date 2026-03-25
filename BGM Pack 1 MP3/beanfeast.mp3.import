@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cx1r8ejv2ggyn"
+path="res://.godot/imported/beanfeast.mp3-5ace072a0fad8055afa03b32a423893a.mp3str"
+
+[deps]
+
+source_file="res://BGM Pack 1 MP3/beanfeast.mp3"
+dest_files=["res://.godot/imported/beanfeast.mp3-5ace072a0fad8055afa03b32a423893a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

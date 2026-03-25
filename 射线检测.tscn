@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b6g5f7157fsr7"]
+
+[ext_resource type="Texture2D" uid="uid://bbr4e5a4xn54w" path="res://icon.svg" id="1_xtvnc"]
+[ext_resource type="Script" uid="uid://dd5tonqebpu3j" path="res://EasyScriptsLearning/RayCast2dTest.cs" id="2_f0mri"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wsuak"]
+size = Vector2(128, 128)
+
+[node name="Node2D" type="Node2D" unique_id=329295687]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1921422636]
+position = Vector2(219, 277)
+texture = ExtResource("1_xtvnc")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=776752070]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D" unique_id=1461210556]
+shape = SubResource("RectangleShape2D_wsuak")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=459216811]
+position = Vector2(360, 277)
+rotation = 0.016018342
+target_position = Vector2(-98, 2)
+collide_with_areas = true
+script = ExtResource("2_f0mri")

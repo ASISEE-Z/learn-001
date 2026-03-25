@@ -1,5 +1,13 @@
+CollisionShape2D
+Area2D
+RayCast2D
 Sprite2D
-Button
 Node2D
-Node
+AudioStreamPlayer
+LightOccluder2D
+PointLight2D
+DirectionalLight2D
+AnimationPlayer
 AnimatedSprite2D
+Button
+Node

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cn541cale6epx"]
+
+[ext_resource type="Texture2D" uid="uid://bbr4e5a4xn54w" path="res://icon.svg" id="1_jn0vf"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_7ycm1"]
+polygon = PackedVector2Array(645, 229, 654, 217, 762, 217, 772, 229, 772, 331, 761, 344, 657, 344, 644, 332)
+
+[node name="Node2D" type="Node2D" unique_id=374361230]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=31587358]
+position = Vector2(545, 280)
+texture = ExtResource("1_jn0vf")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=407286329]
+position = Vector2(708, 280)
+texture = ExtResource("1_jn0vf")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="." unique_id=1170475514]
+visible = false
+color = Color(1, 1, 1, 0.52156866)
+energy = 1.34
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1402192179]
+position = Vector2(531, 444.00003)
+scale = Vector2(7.511718, 5.136719)
+energy = 5.79
+shadow_enabled = true
+texture = ExtResource("1_jn0vf")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=1051138057]
+occluder = SubResource("OccluderPolygon2D_7ycm1")

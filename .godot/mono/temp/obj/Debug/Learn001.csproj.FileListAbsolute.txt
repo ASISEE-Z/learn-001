@@ -15,3 +15,4 @@ D:\GodotProjects\learn-001\.godot\mono\temp\obj\Debug\refint\Learn001.dll
 D:\GodotProjects\learn-001\.godot\mono\temp\obj\Debug\Learn001.pdb
 D:\GodotProjects\learn-001\.godot\mono\temp\obj\Debug\Learn001.genruntimeconfig.cache
 D:\GodotProjects\learn-001\.godot\mono\temp\obj\Debug\ref\Learn001.dll
+D:\GodotProjects\learn-001\.godot\mono\temp\obj\Debug\Learn001.sourcelink.json

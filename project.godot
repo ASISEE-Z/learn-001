@@ -11,13 +11,9 @@ config_version=5
 [application]
 
 config/name="Learn001"
-run/main_scene="uid://c1vckilyf7ad7"
+run/main_scene="uid://b6g5f7157fsr7"
 config/features=PackedStringArray("4.6", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
-
-[autoload]
-
-GameManager="*uid://jjxs0sn211fw"
 
 [dotnet]
 

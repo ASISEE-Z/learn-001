@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://eu8557hkbv77"]
+
+[ext_resource type="Texture2D" uid="uid://bbr4e5a4xn54w" path="res://icon.svg" id="1_v8t4i"]
+[ext_resource type="Script" uid="uid://dq34ggypk66sx" path="res://EasyScriptsLearning/Area2dTest.cs" id="2_13nqg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6g6uu"]
+size = Vector2(128, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4odox"]
+size = Vector2(128.77576, 128.77586)
+
+[node name="Node2D" type="Node2D" unique_id=2103548118]
+
+[node name="player" type="Sprite2D" parent="." unique_id=1794013503]
+position = Vector2(227, 288)
+texture = ExtResource("1_v8t4i")
+
+[node name="Area2D" type="Area2D" parent="player" unique_id=1968001104]
+script = ExtResource("2_13nqg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/Area2D" unique_id=34201529]
+shape = SubResource("RectangleShape2D_6g6uu")
+
+[node name="enemy" type="Sprite2D" parent="." unique_id=1515963704]
+position = Vector2(324, 291)
+scale = Vector2(0.64453083, 0.64453083)
+texture = ExtResource("1_v8t4i")
+
+[node name="Area2D" type="Area2D" parent="enemy" unique_id=971388686]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy/Area2D" unique_id=1049225581]
+position = Vector2(0.38790894, -1.1636057)
+shape = SubResource("RectangleShape2D_4odox")
+
+[connection signal="area_entered" from="player/Area2D" to="player/Area2D" method="OnAreaEnter"]
