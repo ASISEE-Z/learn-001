@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bqsvevmv8auql"]
+
+[ext_resource type="Texture2D" uid="uid://bbr4e5a4xn54w" path="res://icon.svg" id="2_e2o6t"]
+[ext_resource type="Script" uid="uid://bh28slpdgttgp" path="res://Player.cs" id="2_feb5d"]
+[ext_resource type="Script" uid="uid://c6ish774nkfp" path="res://Enemy.cs" id="3_feb5d"]
+
+[node name="Node2D" type="Node2D" unique_id=1736743953]
+
+[node name="Player" type="Sprite2D" parent="." unique_id=1043105962]
+position = Vector2(193, 314)
+texture = ExtResource("2_e2o6t")
+region_rect = Rect2(2.505, 0, 110, 110)
+script = ExtResource("2_feb5d")
+
+[node name="Enemy1" type="Sprite2D" parent="." unique_id=249732269 groups=["敌人"]]
+position = Vector2(653, 318)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_e2o6t")
+script = ExtResource("3_feb5d")
+
+[node name="Enemy2" type="Sprite2D" parent="." unique_id=817303993 groups=["敌人"]]
+position = Vector2(835.00006, 218)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_e2o6t")
+script = ExtResource("3_feb5d")
+
+[node name="Enemy3" type="Sprite2D" parent="." unique_id=551974637 groups=["敌人"]]
+position = Vector2(838, 419)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_e2o6t")
+script = ExtResource("3_feb5d")
+
+[node name="Boss" type="Sprite2D" parent="." unique_id=1089063163 groups=["敌人"]]
+position = Vector2(1040, 316)
+scale = Vector2(1.305, 1.305)
+texture = ExtResource("2_e2o6t")
+script = ExtResource("3_feb5d")

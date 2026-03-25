@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://onr6cs8qiu4m"]
+
+[ext_resource type="Script" uid="uid://optyei1fm4vy" path="res://Button1.cs" id="1_e2rqs"]
+[ext_resource type="Texture2D" uid="uid://bbr4e5a4xn54w" path="res://icon.svg" id="2_st4te"]
+
+[node name="Node2D" type="Node2D" unique_id=498107218]
+
+[node name="Button" type="Button" parent="." unique_id=2146454092]
+offset_left = 65.0
+offset_top = 200.0
+offset_right = 190.0
+offset_bottom = 255.0
+script = ExtResource("1_e2rqs")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1118333722]
+position = Vector2(753, 233)
+texture = ExtResource("2_st4te")

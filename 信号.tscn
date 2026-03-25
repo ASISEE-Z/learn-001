@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c1vckilyf7ad7"]
+
+[ext_resource type="Texture2D" uid="uid://bbr4e5a4xn54w" path="res://icon.svg" id="1_773ax"]
+[ext_resource type="Script" uid="uid://gdmku4owxmm" path="res://A.cs" id="2_s7e6v"]
+[ext_resource type="Script" uid="uid://b48p2656qctoq" path="res://B.cs" id="3_quc0e"]
+
+[node name="Node2D" type="Node2D" unique_id=1963077634]
+
+[node name="A" type="Sprite2D" parent="." unique_id=896493924]
+position = Vector2(210, 315)
+texture = ExtResource("1_773ax")
+script = ExtResource("2_s7e6v")
+
+[node name="B" type="Sprite2D" parent="." unique_id=852004814]
+position = Vector2(924, 316)
+texture = ExtResource("1_773ax")
+script = ExtResource("3_quc0e")
+
+[connection signal="A_Signal" from="A" to="B" method="buttonClick"]

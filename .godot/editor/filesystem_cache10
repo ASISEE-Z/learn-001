@@ -1,0 +1,14 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1774355236
+game2.tscn::PackedScene::1159884758517917050::1774271242::0::1::::<><><>0<>0<><>::uid://bbr4e5a4xn54w::::res://icon.svg
+game.tscn::PackedScene::3547884304024683179::1774355236::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::2493473462165410656::1773748564::1773748570::1::::<><><>0<>0<>79471e7ba970be65593e8d8b120748df<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://scripts/::1774355236
+GameManager.cs::CSharpScript::651708969170773064::1774268788::0::1::::<>Node<><>0<>0<><>::
+InputTest1.cs::CSharpScript::5397041049680941705::1773817961::0::1::::<><><>0<>0<><>::
+InputTest2.cs::CSharpScript::1561013495305694587::1774254962::0::1::::<>Node<><>0<>0<><>::
+InputTest3.cs::CSharpScript::3827551790220508350::1774268217::0::1::::<><><>0<>0<><>::
+MySprite.cs::CSharpScript::7611348181854201321::1773755621::0::1::::<>Sprite2D<><>0<>0<><>::
+Node2d.cs::CSharpScript::64948386401150491::1774266602::0::1::::<>Node2D<><>0<>0<><>::
+Sprite2dTest2.cs::CSharpScript::1859276783858807959::1774355172::0::1::::<><><>0<>0<><>::
+Sprite2dTest.cs::CSharpScript::1122851513275924263::1774353085::0::1::::<><><>0<>0<><>::
