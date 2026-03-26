@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cu1o7tvfifgij"]
+
+[ext_resource type="Texture2D" uid="uid://bbr4e5a4xn54w" path="res://icon.svg" id="1_v4ifh"]
+[ext_resource type="Script" uid="uid://d2we210i1une" path="res://EasyScriptsLearning/RigidBody2dMove.cs" id="2_rbwll"]
+[ext_resource type="Script" uid="uid://nxgoi1bn3c7" path="res://EasyScriptsLearning/CharacterBody2dMove2.cs" id="3_pwjfc"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_pwjfc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rbwll"]
+size = Vector2(1130, 87)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pwjfc"]
+size = Vector2(71, 70)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5gm73"]
+radius = 33.0
+height = 122.0
+
+[node name="Node2D" type="Node2D" unique_id=461017056]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=791838586]
+physics_material_override = SubResource("PhysicsMaterial_pwjfc")
+
+[node name="ground" type="Sprite2D" parent="StaticBody2D" unique_id=91922146]
+position = Vector2(576.00006, 602.00006)
+scale = Vector2(8.796875, 0.6640625)
+texture = ExtResource("1_v4ifh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1635302522]
+position = Vector2(576, 602.5)
+shape = SubResource("RectangleShape2D_rbwll")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=815920777]
+position = Vector2(135, 419)
+lock_rotation = true
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("2_rbwll")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=282879799]
+scale = Vector2(0.5546875, 0.5546875)
+texture = ExtResource("1_v4ifh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=204305560]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_pwjfc")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=819691810]
+position = Vector2(307, 406)
+script = ExtResource("3_pwjfc")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1274239834]
+scale = Vector2(0.48437476, 1)
+texture = ExtResource("1_v4ifh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=487370251]
+shape = SubResource("CapsuleShape2D_5gm73")
+
+[connection signal="body_entered" from="RigidBody2D" to="RigidBody2D" method="bodyEntered"]
+[connection signal="body_exited" from="RigidBody2D" to="RigidBody2D" method="bodyExit"]
