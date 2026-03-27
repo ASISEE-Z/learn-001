@@ -1,4 +1,7 @@
-res://物理系统简单认识.tscn
-res://EasyScriptsLearning/RigidBody2dMove.cs
+res://EasyScriptsLearning/TextureButtonTest.cs
 res://EasyScriptsLearning/CharacterBody2dMove2.cs
+res://EasyScriptsLearning/RigidBody2dMove.cs
 res://UI.tscn
+res://EasyScriptsLearning/CheckBoxTest.cs
+res://EasyScriptsLearning/ProgressBarTest.cs
+res://EasyScriptsLearning/TextEditTest.cs

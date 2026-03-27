@@ -1,9 +1,184 @@
 [gd_scene format=3 uid="uid://bas1a6q6d3m4f"]
 
+[ext_resource type="Texture2D" uid="uid://bbr4e5a4xn54w" path="res://icon.svg" id="1_3b2b5"]
+[ext_resource type="Script" uid="uid://dyp4c7awpa1qe" path="res://EasyScriptsLearning/TextureButtonTest.cs" id="2_g6l6n"]
+[ext_resource type="Script" uid="uid://di5y4ucdswhxo" path="res://EasyScriptsLearning/CheckBoxTest.cs" id="3_g6l6n"]
+[ext_resource type="Script" uid="uid://c64m1d02uxfpl" path="res://EasyScriptsLearning/ProgressBarTest.cs" id="4_qui0h"]
+[ext_resource type="Script" uid="uid://c51ul2nsqw7c1" path="res://EasyScriptsLearning/TextEditTest.cs" id="5_vrfts"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qui0h"]
+font_size = 26
+font_color = Color(0.18431373, 1, 1, 1)
+outline_size = 2
+outline_color = Color(0.9843137, 1, 1, 1)
+shadow_size = 3
+shadow_color = Color(0.30588236, 0.5803922, 0.87058824, 0.3529412)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_g6l6n"]
+
 [node name="UI" type="Control" unique_id=1162319778]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = 3.0
+offset_right = -2.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=934381664]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 37.0
+offset_right = 173.0
+offset_bottom = 165.0
+texture = ExtResource("1_3b2b5")
+
+[node name="Label" type="Label" parent="." unique_id=1618908770]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 169.0
+offset_right = 185.0
+offset_bottom = 205.0
+text = "Godot"
+label_settings = SubResource("LabelSettings_qui0h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1601674441]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 237.0
+offset_right = 169.0
+offset_bottom = 365.0
+texture_normal = ExtResource("1_3b2b5")
+script = ExtResource("2_g6l6n")
+
+[node name="LinkButton" type="LinkButton" parent="." unique_id=273962703]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 377.0
+offset_right = 380.0
+offset_bottom = 436.0
+text = "网址链接"
+uri = "https://网址链接"
+
+[node name="Button" type="Button" parent="." unique_id=686224122]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 471.0
+offset_right = 329.0
+offset_bottom = 607.0
+text = "按钮"
+icon = ExtResource("1_3b2b5")
+
+[node name="CheckBox" type="CheckBox" parent="." unique_id=1190049279]
+layout_mode = 0
+offset_left = 398.0
+offset_top = 111.0
+offset_right = 570.0
+offset_bottom = 158.0
+button_group = SubResource("ButtonGroup_g6l6n")
+text = "唱"
+script = ExtResource("3_g6l6n")
+
+[node name="CheckBox2" type="CheckBox" parent="." unique_id=1973332763]
+layout_mode = 0
+offset_left = 398.0
+offset_top = 148.0
+offset_right = 563.0
+offset_bottom = 196.0
+button_group = SubResource("ButtonGroup_g6l6n")
+text = "跳"
+
+[node name="CheckBox3" type="CheckBox" parent="." unique_id=324460548]
+layout_mode = 0
+offset_left = 398.0
+offset_top = 184.0
+offset_right = 563.0
+offset_bottom = 232.0
+button_group = SubResource("ButtonGroup_g6l6n")
+text = "rap"
+
+[node name="CheckBox4" type="CheckBox" parent="." unique_id=2069190864]
+layout_mode = 0
+offset_left = 398.0
+offset_top = 226.0
+offset_right = 563.0
+offset_bottom = 274.0
+button_group = SubResource("ButtonGroup_g6l6n")
+text = "篮球"
+
+[node name="CheckButton" type="CheckButton" parent="." unique_id=1644307270]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 277.0
+offset_right = 490.0
+offset_bottom = 338.0
+text = "R18"
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1947937727]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 352.0
+offset_right = 653.0
+offset_bottom = 379.0
+value = 30.04
+script = ExtResource("4_qui0h")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=836736930]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.068
+anchor_top = -0.024
+anchor_right = -0.068
+anchor_bottom = -0.024
+offset_left = 548.336
+offset_top = 453.552
+offset_right = 676.336
+offset_bottom = 581.552
+value = 30.0
+texture_under = ExtResource("1_3b2b5")
+texture_progress = ExtResource("1_3b2b5")
+tint_under = Color(0.23392546, 0.23392546, 0.23392543, 1)
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=930760432]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.069000006
+anchor_top = -0.025
+anchor_right = -0.069000006
+anchor_bottom = -0.025
+offset_left = 814.48804
+offset_top = 39.2
+offset_right = 1046.488
+offset_bottom = 132.2
+placeholder_text = "请输入账号"
+wrap_mode = 1
+script = ExtResource("5_vrfts")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=661132373]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 163.0
+offset_right = 854.0
+offset_bottom = 592.0
+
+[node name="TextureRect2" type="TextureRect" parent="VBoxContainer" unique_id=1884191131]
+layout_mode = 2
+texture = ExtResource("1_3b2b5")
+
+[node name="TextureRect3" type="TextureRect" parent="VBoxContainer" unique_id=74795291]
+layout_mode = 2
+texture = ExtResource("1_3b2b5")
+
+[node name="TextureRect4" type="TextureRect" parent="VBoxContainer" unique_id=1059964149]
+layout_mode = 2
+texture = ExtResource("1_3b2b5")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="ButtonClick"]
+[connection signal="toggled" from="CheckBox" to="CheckBox" method="toggleChanged"]
+[connection signal="value_changed" from="ProgressBar" to="ProgressBar" method="onValueChnaged"]
+[connection signal="text_changed" from="TextEdit" to="TextEdit" method="textChanged"]
