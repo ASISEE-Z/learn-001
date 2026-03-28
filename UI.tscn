@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://di5y4ucdswhxo" path="res://EasyScriptsLearning/CheckBoxTest.cs" id="3_g6l6n"]
 [ext_resource type="Script" uid="uid://c64m1d02uxfpl" path="res://EasyScriptsLearning/ProgressBarTest.cs" id="4_qui0h"]
 [ext_resource type="Script" uid="uid://c51ul2nsqw7c1" path="res://EasyScriptsLearning/TextEditTest.cs" id="5_vrfts"]
+[ext_resource type="Script" uid="uid://bef6afxmc4h2v" path="res://EasyScriptsLearning/ItemListTest.cs" id="6_0mc3e"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qui0h"]
 font_size = 26
@@ -76,55 +77,55 @@ icon = ExtResource("1_3b2b5")
 
 [node name="CheckBox" type="CheckBox" parent="." unique_id=1190049279]
 layout_mode = 0
-offset_left = 398.0
-offset_top = 111.0
-offset_right = 570.0
-offset_bottom = 158.0
+offset_left = 220.0
+offset_top = 46.0
+offset_right = 392.0
+offset_bottom = 93.0
 button_group = SubResource("ButtonGroup_g6l6n")
 text = "唱"
 script = ExtResource("3_g6l6n")
 
 [node name="CheckBox2" type="CheckBox" parent="." unique_id=1973332763]
 layout_mode = 0
-offset_left = 398.0
-offset_top = 148.0
-offset_right = 563.0
-offset_bottom = 196.0
+offset_left = 219.0
+offset_top = 88.0
+offset_right = 384.0
+offset_bottom = 136.0
 button_group = SubResource("ButtonGroup_g6l6n")
 text = "跳"
 
 [node name="CheckBox3" type="CheckBox" parent="." unique_id=324460548]
 layout_mode = 0
-offset_left = 398.0
-offset_top = 184.0
-offset_right = 563.0
-offset_bottom = 232.0
+offset_left = 219.0
+offset_top = 132.0
+offset_right = 384.0
+offset_bottom = 180.0
 button_group = SubResource("ButtonGroup_g6l6n")
 text = "rap"
 
 [node name="CheckBox4" type="CheckBox" parent="." unique_id=2069190864]
 layout_mode = 0
-offset_left = 398.0
-offset_top = 226.0
-offset_right = 563.0
-offset_bottom = 274.0
+offset_left = 219.0
+offset_top = 179.0
+offset_right = 384.0
+offset_bottom = 227.0
 button_group = SubResource("ButtonGroup_g6l6n")
 text = "篮球"
 
 [node name="CheckButton" type="CheckButton" parent="." unique_id=1644307270]
 layout_mode = 0
-offset_left = 397.0
-offset_top = 277.0
-offset_right = 490.0
-offset_bottom = 338.0
+offset_left = 214.0
+offset_top = 224.0
+offset_right = 307.0
+offset_bottom = 285.0
 text = "R18"
 
 [node name="ProgressBar" type="ProgressBar" parent="." unique_id=1947937727]
 layout_mode = 0
-offset_left = 401.0
-offset_top = 352.0
-offset_right = 653.0
-offset_bottom = 379.0
+offset_left = 210.0
+offset_top = 343.0
+offset_right = 462.0
+offset_bottom = 370.0
 value = 30.04
 script = ExtResource("4_qui0h")
 
@@ -135,10 +136,10 @@ anchor_left = -0.068
 anchor_top = -0.024
 anchor_right = -0.068
 anchor_bottom = -0.024
-offset_left = 548.336
-offset_top = 453.552
-offset_right = 676.336
-offset_bottom = 581.552
+offset_left = 469.336
+offset_top = 491.552
+offset_right = 597.336
+offset_bottom = 619.552
 value = 30.0
 texture_under = ExtResource("1_3b2b5")
 texture_progress = ExtResource("1_3b2b5")
@@ -151,20 +152,20 @@ anchor_left = -0.069000006
 anchor_top = -0.025
 anchor_right = -0.069000006
 anchor_bottom = -0.025
-offset_left = 814.48804
-offset_top = 39.2
-offset_right = 1046.488
-offset_bottom = 132.2
+offset_left = 436.488
+offset_top = 44.2
+offset_right = 668.48804
+offset_bottom = 137.2
 placeholder_text = "请输入账号"
 wrap_mode = 1
 script = ExtResource("5_vrfts")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=661132373]
 layout_mode = 0
-offset_left = 726.0
-offset_top = 163.0
-offset_right = 854.0
-offset_bottom = 592.0
+offset_left = 546.0
+offset_top = 160.0
+offset_right = 674.0
+offset_bottom = 589.0
 
 [node name="TextureRect2" type="TextureRect" parent="VBoxContainer" unique_id=1884191131]
 layout_mode = 2
@@ -178,7 +179,31 @@ texture = ExtResource("1_3b2b5")
 layout_mode = 2
 texture = ExtResource("1_3b2b5")
 
+[node name="ItemList" type="ItemList" parent="." unique_id=1787415044]
+layout_mode = 0
+offset_left = 688.0
+offset_top = -6.0
+offset_right = 1093.0
+offset_bottom = 285.0
+item_count = 6
+max_columns = 3
+icon_mode = 0
+item_0/text = "111"
+item_0/icon = ExtResource("1_3b2b5")
+item_1/text = "222"
+item_1/icon = ExtResource("1_3b2b5")
+item_2/text = "333"
+item_2/icon = ExtResource("1_3b2b5")
+item_3/text = "444"
+item_3/icon = ExtResource("1_3b2b5")
+item_4/text = "555"
+item_4/icon = ExtResource("1_3b2b5")
+item_5/text = "666"
+item_5/icon = ExtResource("1_3b2b5")
+script = ExtResource("6_0mc3e")
+
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="ButtonClick"]
 [connection signal="toggled" from="CheckBox" to="CheckBox" method="toggleChanged"]
 [connection signal="value_changed" from="ProgressBar" to="ProgressBar" method="onValueChnaged"]
 [connection signal="text_changed" from="TextEdit" to="TextEdit" method="textChanged"]
+[connection signal="item_clicked" from="ItemList" to="ItemList" method="ItemClick"]

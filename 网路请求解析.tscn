@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bthb6eupcx1fv"]
+
+[ext_resource type="Script" uid="uid://bjrkwiga3rwy0" path="res://EasyScriptsLearning/HttpRequest.cs" id="1_17aa0"]
+
+[node name="Node2D" type="Node2D" unique_id=1632591640]
+
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=497596475]
+script = ExtResource("1_17aa0")

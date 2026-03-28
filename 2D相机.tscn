@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bvcpb8djpyrka"]
+
+[ext_resource type="Texture2D" uid="uid://bbr4e5a4xn54w" path="res://icon.svg" id="1_53mcc"]
+[ext_resource type="Script" uid="uid://cqcoohdxdesix" path="res://EasyScriptsLearning/CharacterBody2d.cs" id="2_ylegh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_56hrc"]
+size = Vector2(1717, 126)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dxtgu"]
+size = Vector2(128, 126)
+
+[node name="Node2D" type="Node2D" unique_id=1558592199]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=877967743]
+position = Vector2(557, 556)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=802590643]
+position = Vector2(300.49997, 5.9999995)
+scale = Vector2(13.4140625, 1)
+texture = ExtResource("1_53mcc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1457036435]
+position = Vector2(301.5, 5)
+shape = SubResource("RectangleShape2D_56hrc")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=865424882]
+position = Vector2(485, 428)
+script = ExtResource("2_ylegh")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1505114995]
+texture = ExtResource("1_53mcc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2144045682]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_dxtgu")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=673162478]
+position = Vector2(0, -130)
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0

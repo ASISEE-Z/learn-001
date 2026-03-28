@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://n2miwa306spl"]
+
+[ext_resource type="Script" uid="uid://6jyt87pjvkog" path="res://EasyScriptsLearning/SaveArchive.cs" id="1_0o68q"]
+[ext_resource type="Script" uid="uid://b0h7eo2w4kqu5" path="res://EasyScriptsLearning/JsonTest.cs" id="2_gj6bg"]
+
+[node name="Node2D" type="Node2D" unique_id=1309982342]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1270681118]
+script = ExtResource("1_0o68q")
+
+[node name="json" type="Node2D" parent="." unique_id=1522204124]
+script = ExtResource("2_gj6bg")

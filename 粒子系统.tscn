@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dthte2aynerpi"]
+
+[ext_resource type="Texture2D" uid="uid://bbr4e5a4xn54w" path="res://icon.svg" id="1_3tqgq"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dvwfh"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(560, 1, 1)
+initial_velocity_min = 17.539999
+initial_velocity_max = 61.71
+gravity = Vector3(0, 98, 0)
+scale_min = 0.5
+
+[node name="Node2D" type="Node2D" unique_id=1665359944]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=853219977]
+position = Vector2(570, 10)
+texture = ExtResource("1_3tqgq")
+lifetime = 3.25
+process_material = SubResource("ParticleProcessMaterial_dvwfh")
